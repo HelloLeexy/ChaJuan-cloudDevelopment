@@ -1,0 +1,52 @@
+<view class='code'>
+  <view class='code sty'>
+    <textarea class='code input' bindinput='codeInput' placeholder='在此添加课程代码~' value='{{code}}' auto-focus
+      auto-height></textarea>
+  </view>
+</view>
+
+
+
+
+<view class='flexDownC'>
+  <view class='flexDownC w100'>
+    <textarea class='input' bindinput='textInput' placeholder='在此添加对问题描述~' value='{{text}}' auto-focus
+      auto-height></textarea>
+  </view>
+</view>
+
+
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <view class="weui-input">{{array[index]}}</view>
+</picker>
+<picker bindchange="bindYearChange" value="{{index1}}" range="{{array1}}">
+  <view class="weui-input">{{array1[index1]}}</view>
+</picker>
+
+<view class='flexCenter w100' wx:if='{{imgUrl}}'>
+  <image src='{{imgUrl}}' class='w100' mode="aspectFit"></image>
+</view>
+
+
+<!-- <view class='publishItem' style="width:{{imagesSize}}px;height:{{imageSize}}px;">
+  <view  bindtap='doUpload'>+</view>
+  <view></view>
+</view> -->
+
+<view class="page">
+  <view class="page__bd">
+    <mp-cells>
+      <mp-cell>
+        <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}" upload="{{uplaodFile}}"
+          files="{{files}}" max-count="9" title="" tips=""></mp-uploader>
+      </mp-cell>
+    </mp-cells>
+  </view>
+</view>
+
+
+
+
+
+<button class="pulishBtn" bindgetuserinfo="getUserInfo" type="primary" size="{{primarySize}}" loading="{{loading}}"
+  plain="{{plain}}" disabled="{{disabled}}" bindtap="getUserInfo">发布</button>

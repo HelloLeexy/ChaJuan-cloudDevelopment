@@ -1,0 +1,25 @@
+{
+  "usingComponents": {
+    "van-button": "/dist/button/index",
+    "van-search": "/dist/search/index",
+    "van-divider": "/dist/divider/index",
+    "van-grid": "/dist/grid/index",
+    "van-grid-item": "/dist/grid-item/index",
+    "van-tab": "/dist/tab/index",
+    "van-tabs": "/dist/tabs/index",
+    "van-card": "/dist/card/index",
+    "van-skeleton": "/dist/skeleton/index",
+    "van-swipe-cell": "/dist/swipe-cell/index",
+    "van-loading": "/dist/loading/index",
+    "van-rate": "/dist/rate/index",
+    "van-tag": "/dist/tag/index",
+    "van-cell": "/dist/cell/index",
+    "van-cell-group": "/dist/cell-group/index",
+    "van-image": "/dist/image/index",
+    "van-tabbar": "/dist/tabbar/index",
+    "van-tabbar-item": "/dist/tabbar-item/index"
+    
+
+  }
+  
+}

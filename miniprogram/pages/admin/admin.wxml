@@ -1,0 +1,17 @@
+<text class="day"></text>
+<view class="out" wx:for="{{dataList}}" wx:key="index" wx:for-index="weibo">
+  <navigator class="row" url='/pages/MyLike/MyLike?index={{weibo}}'>
+    <view class="Data">
+      <view class="Moudle">发布者: {{item.nickName}}</view>
+      <view class="Moudle">课程代码: {{item.code}}</view>
+      <View class="Moudle-when">
+        <view class="test">试卷类型: {{item.typeValue}}</view>
+        <view class="Moudle-time">试卷时间: {{item.yearValue}}</view>
+      </View>
+      <view class="viewTime">发布时间: {{item.zTime}}</view>
+      <!-- <button class="pulishBtn" bindgetuserinfo="getUserInfo" type="primary" size="{{primarySize}}"
+        loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="getUserInfo">发布</button> -->
+    </view>
+  </navigator>
+  <button class="delete" type="warn" catchtap="delete" data-discussion_id="{{item._id}}">删除</button>
+</view>

@@ -1,0 +1,252 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/4/20 上午12:57:03
+使用方法：
+在 F:\我的\Max Jhin\测试\pages\index\index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 F:\我的\Max Jhin\测试\pages\index\index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="sk-container">
+      <view is="dist/tabs/index">
+        <view class=" van-tabs tabs-index--van-tabs van-tabs--line tabs-index--van-tabs--line">
+          <view is="dist/sticky/index">
+            <view class=" van-sticky sticky-index--van-sticky" style="z-index:1">
+              <view class="van-sticky-wrap sticky-index--van-sticky-wrap" style="z-index:1">
+                <view class="van-tabs__wrap tabs-index--van-tabs__wrap">
+                  <scroll-view scroll-with-animation="true"
+                    class="van-tabs__scroll tabs-index--van-tabs__scroll van-tabs__scroll--line tabs-index--van-tabs__scroll--line"
+                    scroll-left="0" style="true">
+                    <view
+                      class="van-tabs__nav tabs-index--van-tabs__nav van-tabs__nav--line tabs-index--van-tabs__nav--line "
+                      style="true">
+                      <view class="van-tabs__line tabs-index--van-tabs__line"
+                        style="width:40px;transform:translateX(42.5px);-webkit-transform:translateX(42.5px)"></view>
+                      <view
+                        class="  van-ellipsis tabs-index--van-ellipsis van-tab tabs-index--van-tab van-tab--active tabs-index--van-tab--active"
+                        data-index="0" style="true">
+                        <view
+                          class="van-ellipsis tabs-index--van-ellipsis sk-transparent sk-text-34-0909-119 sk-text sk-image"
+                          style="background-position-x: 50%;">
+                          推荐
+                        </view>
+                      </view>
+                      <view class=" van-ellipsis tabs-index--van-ellipsis van-tab tabs-index--van-tab" data-index="1"
+                        style="true">
+                        <view
+                          class="van-ellipsis tabs-index--van-ellipsis sk-transparent sk-text-34-0909-559 sk-text sk-image"
+                          style="background-position-x: 50%;">
+                          关注
+                        </view>
+                      </view>
+                      <view class=" van-ellipsis tabs-index--van-ellipsis van-tab tabs-index--van-tab" data-index="2"
+                        style="true">
+                        <view
+                          class="van-ellipsis tabs-index--van-ellipsis sk-transparent sk-text-34-0909-869 sk-text sk-image"
+                          style="background-position-x: 50%;">
+                          个人
+                        </view>
+                      </view>
+                    </view>
+                  </scroll-view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="van-tabs__content tabs-index--van-tabs__content">
+            <view
+              class="van-tabs__track tabs-index--van-tabs__track van-tabs__track--animated tabs-index--van-tabs__track--animated van-tabs__track tabs-index--van-tabs__track"
+              style="left:0%;transition-duration:0.3s;-webkit-transition-duration:0.3s">
+              <view is="dist/tab/index">
+                <view
+                  class=" van-tab__pane tab-index--van-tab__pane van-tab__pane--active tab-index--van-tab__pane--active"
+                  style="true">
+                  <swiper autoplay="false" circular="true" class="swiper1" indicator-dots="true" current="0">
+                    <swiper-item
+                      style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+                      <image data-url="undefined" mode="aspectFill" class="sk-image"></image>
+                    </swiper-item>
+                  </swiper>
+                  <view>
+                    <view is="dist/search/index">
+                      <view class="van-search search-index--van-search " style="background: #4fc08d">
+                        <view
+                          class="van-search__content search-index--van-search__content van-search__content--round search-index--van-search__content--round">
+                          <view is="dist/field/index" class="van-search__field search-index--van-search__field ">
+                            <view is="dist/cell/index">
+                              <view
+                                class="field-index--van-field van-cell dist-cell-index--van-cell van-cell--borderless dist-cell-index--van-cell--borderless sk-pseudo sk-pseudo-circle"
+                                hover-class="van-cell--hover hover-class" hover-stay-time="70"
+                                style="padding: 5px 10px 5px 0; background-color: transparent;">
+                                <view is="dist/icon/index"
+                                  class="van-cell__left-icon-wrap dist-cell-index--van-cell__left-icon-wrap">
+                                  <view
+                                    class="dist-cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-search icon-index--van-icon-search sk-pseudo sk-pseudo-circle"
+                                    style="true"></view>
+                                </view>
+                                <view class="van-cell__value dist-cell-index--van-cell__value ">
+                                  <view
+                                    class="van-field__body field-index--van-field__body van-field__body--search field-index--van-field__body--search">
+                                  </view>
+                                </view>
+                              </view>
+                            </view>
+                          </view>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                  <view is="dist/cell/index">
+                    <view
+                      class="van-cell dist-cell-index--van-cell van-cell--clickable dist-cell-index--van-cell--clickable sk-pseudo sk-pseudo-circle"
+                      hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+                      <view is="dist/icon/index"
+                        class="van-cell__left-icon-wrap dist-cell-index--van-cell__left-icon-wrap">
+                        <view
+                          class="dist-cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-like-o icon-index--van-icon-like-o sk-pseudo sk-pseudo-circle"
+                          style="true"></view>
+                      </view>
+                      <view
+                        class="van-cell__title dist-cell-index--van-cell__title sk-transparent sk-text-20-8333-420 sk-text sk-image"
+                        style="true">历史纪录</view>
+                      <view is="dist/icon/index"
+                        class="van-cell__right-icon-wrap dist-cell-index--van-cell__right-icon-wrap ">
+                        <view
+                          class="dist-cell-index--van-cell__right-icon van-icon icon-index--van-icon van-icon-arrow icon-index--van-icon-arrow sk-pseudo sk-pseudo-circle"
+                          style="true"></view>
+                      </view>
+                    </view>
+                  </view>
+                  <view is="dist/skeleton/index">
+                    <view
+                      class=" van-skeleton skeleton-index--van-skeleton van-skeleton--animate skeleton-index--van-skeleton--animate">
+                      <view
+                        class=" van-skeleton__avatar skeleton-index--van-skeleton__avatar van-skeleton__avatar--round skeleton-index--van-skeleton__avatar--round"
+                        style="width:32px;height:32px"></view>
+                      <view class="van-skeleton__content skeleton-index--van-skeleton__content">
+                        <view class=" van-skeleton__title skeleton-index--van-skeleton__title" style="width:40%"></view>
+                        <view class=" van-skeleton__row skeleton-index--van-skeleton__row" style="width:100%"></view>
+                        <view class=" van-skeleton__row skeleton-index--van-skeleton__row" style="width:100%"></view>
+                        <view class=" van-skeleton__row skeleton-index--van-skeleton__row" style="width:100%"></view>
+                      </view>
+                    </view>
+                  </view>
+                  <view is="dist/card/index">
+                    <view class=" van-card card-index--van-card">
+                      <view class="van-card__header card-index--van-card__header">
+                        <view class="van-card__thumb card-index--van-card__thumb">
+                          <view is="dist/tag/index">
+                            <view
+                              class="card-index--van-card__tag van-tag tag-index--van-tag van-tag--danger tag-index--van-tag--danger van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-12-5000-600 sk-text sk-pseudo sk-pseudo-circle sk-image"
+                              style="true">
+                              专业
+                            </view>
+                          </view>
+                        </view>
+                        <view
+                          class="van-card__content card-index--van-card__content van-card__content card-index--van-card__content">
+                          <view>
+                            <view
+                              class="van-card__title card-index--van-card__title sk-transparent sk-text-12-5000-254 sk-text sk-image">
+                              题目</view>
+                            <view
+                              class="van-card__desc card-index--van-card__desc sk-transparent sk-text-20-0000-821 sk-text sk-image">
+                              文章内容</view>
+                          </view>
+                          <view class="van-card__bottom card-index--van-card__bottom"></view>
+                        </view>
+                      </view>
+                      <view class="van-card__footer card-index--van-card__footer">
+                        <view>
+                          <view is="dist/button/index">
+                            <button app-parameter="true" business-id="true"
+                              class="van-button button-index--van-button van-button--default button-index--van-button--default van-button--mini button-index--van-button--mini sk-button sk-pseudo sk-pseudo-circle"
+                              data-detail="null" form-type="true" hover-class="van-button--active hover-class"
+                              lang="true" open-type="true" send-message-img="true" send-message-path="true"
+                              send-message-title="true" session-from="true" style="border: none;">
+                              <view
+                                class="van-button__text button-index--van-button__text sk-transparent sk-text-25-0000-326 sk-text sk-image"
+                                style="background-position-x: 50%;">收藏
+
+                              </view>
+                            </button>
+                          </view>
+                          <view is="dist/button/index">
+                            <button app-parameter="true" business-id="true"
+                              class="van-button button-index--van-button van-button--default button-index--van-button--default van-button--mini button-index--van-button--mini sk-button sk-pseudo sk-pseudo-circle"
+                              data-detail="null" form-type="true" hover-class="van-button--active hover-class"
+                              lang="true" open-type="true" send-message-img="true" send-message-path="true"
+                              send-message-title="true" session-from="true" style="border: none;">
+                              <view class="van-button__text button-index--van-button__text">
+                                <navigator class="sk-transparent sk-text-25-0000-264 sk-text sk-image"
+                                  style="background-position-x: 50%;">评论</navigator>
+                              </view>
+                            </button>
+                          </view>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                  <view is="dist/rate/index">
+                    <view class="van-rate rate-index--van-rate ">
+                      <view class="van-rate__item rate-index--van-rate__item" style="padding-right: ">
+                        <view is="dist/icon/index" class="van-rate__icon rate-index--van-rate__icon" data-score="0"
+                          style="font-size: ">
+                          <view
+                            class="van-icon icon-index--van-icon van-icon-star-o icon-index--van-icon-star-o sk-pseudo sk-pseudo-circle"
+                            style="color:#c7c7c7"></view>
+                        </view>
+                      </view>
+                      <view class="van-rate__item rate-index--van-rate__item" style="padding-right: ">
+                        <view is="dist/icon/index" class="van-rate__icon rate-index--van-rate__icon" data-score="1"
+                          style="font-size: ">
+                          <view
+                            class="van-icon icon-index--van-icon van-icon-star-o icon-index--van-icon-star-o sk-pseudo sk-pseudo-circle"
+                            style="color:#c7c7c7"></view>
+                        </view>
+                      </view>
+                      <view class="van-rate__item rate-index--van-rate__item" style="padding-right: ">
+                        <view is="dist/icon/index" class="van-rate__icon rate-index--van-rate__icon" data-score="2"
+                          style="font-size: ">
+                          <view
+                            class="van-icon icon-index--van-icon van-icon-star-o icon-index--van-icon-star-o sk-pseudo sk-pseudo-circle"
+                            style="color:#c7c7c7"></view>
+                        </view>
+                      </view>
+                      <view class="van-rate__item rate-index--van-rate__item" style="padding-right: ">
+                        <view is="dist/icon/index" class="van-rate__icon rate-index--van-rate__icon" data-score="3"
+                          style="font-size: ">
+                          <view
+                            class="van-icon icon-index--van-icon van-icon-star-o icon-index--van-icon-star-o sk-pseudo sk-pseudo-circle"
+                            style="color:#c7c7c7"></view>
+                        </view>
+                      </view>
+                      <view class="van-rate__item rate-index--van-rate__item" style="padding-right: ">
+                        <view is="dist/icon/index" class="van-rate__icon rate-index--van-rate__icon" data-score="4"
+                          style="font-size: ">
+                          <view
+                            class="van-icon icon-index--van-icon van-icon-star-o icon-index--van-icon-star-o sk-pseudo sk-pseudo-circle"
+                            style="color:#c7c7c7"></view>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,68 @@
+
+
+{
+  "pages": [
+    "pages/start/start",
+    "pages/personinfo/personinfo",
+    "pages/setting/setting", 
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/load/load",
+    "pages/MyLike/MyLike",
+    "pages/person/person",
+    "pages/message/message",
+    "pages/collect/collect",
+    "pages/UserCenter/UserCenter",
+    "pages/FinalExam/FinalExam",
+    "pages/lesson/lesson",
+    "pages/Testt/Testt",
+    "pages/tutorial/tutorial",
+    "pages/inform/inform",
+    "pages/messageChange/messageChange",
+    "pages/history/history",
+    "pages/ding-test/ding-test",
+    "pages/search/search",
+    "pages/admin/admin",
+    "pages/adminPassword/adminPassword",
+    "pages/daqian/daqian"
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-green.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/load/load",
+        "iconPath": "image/add.png",
+        "selectedIconPath": "image/add-green.png",
+        "text": "上传"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/mine-green.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "西浦查卷吧",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+  },
+  "sitemapLocation": "sitemap.json",
+
+  
+  "useExtendedLib": {
+    "weui":true
+  }
+}

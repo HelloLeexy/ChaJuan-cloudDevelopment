@@ -1,0 +1,101 @@
+/* pages/center/center.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.swiper1{
+  margin:10rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.swiper1 image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+  overflow: hidden;
+  
+}
+
+.person image{
+  width: 100%;
+  height: 200rpx;
+  
+}
+.guanjianci{
+  margin:10rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+
+}
+.block{
+  border-radius: 15px;
+  width: 92%;
+  /* height: 150px; */
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 7%;
+  background-color: rgb(225, 228, 225);
+}
+.getblock image{
+/* display: inline-block; */
+margin-left: 20px;
+width: 25%;
+height: 100px;
+
+}
+
+
+.user-group{
+  display: flex;
+  margin-top: 10rpx;
+
+}
+.image-list{
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.avatar{
+  width: 74rpx;
+  height: 74rpx;
+  border-radius: 50%;
+}
+.right-info{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.username{
+  font-size: 28rpx;
+}
+.detail-info{
+  font-size: 24rpx;
+  color: #665566;
+  display: flex;
+}
+.time{
+  margin-right: 20rpx;
+}
+#test{
+  display: inline;
+
+}

@@ -1,0 +1,62 @@
+/* pages/history/history.wxss */
+.day{
+  padding:30rpx;  
+  font-weight: bold;
+}
+
+
+.out{
+  padding:30rpx; 
+  box-sizing:border-box;
+}
+
+.row{
+  padding:3rpx;
+  display: flex; 
+  height: 220rpx;
+  border-bottom:1px solid #ccc;
+  margin-bottom: 20rpx;
+}
+.Pic{flex:3}
+
+.Pic image{
+  
+  width: 100%;
+  height: 100%;
+  border:1px solid #ccc;
+}
+
+.Data{
+  flex:7; 
+  padding-left:50rpx; 
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Moudle-when{
+  display: flex;
+}
+.Moudle-time{
+  margin-left: 10rpx;
+  font-size: 30rpx;
+}
+
+.viewTime{
+  font-size : 30rpx;
+  color: #999;
+}
+
+.Moudle{
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.anniu{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.test{
+  font-size: 30rpx;
+}

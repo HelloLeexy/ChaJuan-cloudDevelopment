@@ -1,0 +1,43 @@
+
+<block class="youbing" >
+  <view class="row"  wx:for="{{dataList}}" wx:for-index="weibo" wx:key="index" >
+    <navigator url='/pages/MyLike/MyLike?index={{weibo}}'>
+      <!-- <view>标记：{{index}}</view>
+      <view>标记2： {{weibo}}</view> -->
+      <!-- 界面 -->
+      <view class="name">发布者： {{item.nickName}}</view>
+      <view class="code">课程代码： {{item.code}}</view>
+      <view class="content">试卷描述： {{item.content}}</view>
+      <view class="time">发布时间：{{item.zTime}} </view>
+      <view class="image_if" wx:if="{{item.image.length === 1}}">
+        <image src="{{item.image}}" style="width:100%;max-height:400rpx;" mode="aspectFill"></image>
+      </view>
+      <view class="2image" wx:if="{{item.image.length === 2 }}">
+        <view wx:for="{{[0,1,2]}}" wx:for-item="i" wx:key="index">
+          
+          <view style="flex-direction:row;display:flex;"><!-- 横排布局 -->
+            <view wx:for="{{item.image}}" wx:for-item="tempPath" wx:for-index="index" wx:key="index"><!-- 遍历数组 -->
+              <view wx:if="{{index>=i*3 && index<3*(i+1)}}" class="flex-item"><!-- 分段显示 -->
+                <image class="image" src="{{tempPath}}" style="width:{{two}}px;height:{{two}}px;" mode="aspectFill"/>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="I_image" wx:if="{{item.image.length >= 3}}">
+        <view wx:for="{{[0,1,2]}}" wx:for-item="i" wx:key="index">
+          <view style="flex-direction:row;display:flex;"><!-- 横排布局 -->
+            <view wx:for="{{item.image}}" wx:for-item="tempPath" wx:for-index="index" wx:key="index"><!-- 遍历数组 -->
+              <view wx:if="{{index>=i*3 && index<3*(i+1)}}" class="flex-item"><!-- 分段显示 -->
+                <image class="image" src="{{tempPath}}" style="width:{{TT}}px;height:{{TT}}px;" mode="aspectFill"/>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </navigator>
+      
+  </view>
+
+</block>

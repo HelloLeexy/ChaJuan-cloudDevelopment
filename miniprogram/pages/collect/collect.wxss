@@ -1,0 +1,20 @@
+.row{padding: 10rpx 50rpx;border-bottom: 1px solid #ccc;  flex: auto;
+  border-radius: 10%;
+  width: 590rpx;
+  height: 100%rpx;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 7%;
+  background-color:rgb(238, 238, 238);
+}
+.row .name{
+  color: rgb(223, 126, 82);
+font-size: medium;
+}
+.row .code{
+  color: black;
+font-size: large;
+}
+.row .content{
+  font-size: large;
+}

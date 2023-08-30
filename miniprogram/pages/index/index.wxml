@@ -1,0 +1,244 @@
+<!-- 索引 -->
+<van-tabs animated color=" 	black">
+  <van-tab title="推荐">
+    <!-- 轮播图 -->
+    <swiper wx:if="{{banners}}" class="swiper1" indicator-dots="ture" autoplay circular>
+      <swiper-item wx:for="{{banners}}" wx:key="id">
+        <image bindtap=" tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" />
+      </swiper-item>
+    </swiper>
+
+    <!-- 搜索 -->
+    <view class="guanjianci" bindtap='next'>
+      <van-search value="{{ value }}" shape="round" background="#4fc08d" placeholder="请输入搜索关键词" />
+    </view>
+
+    <!-- 详情 -->
+    <wxs src="/utils/utils.wxs" module="ppp"></wxs>
+
+    <block class="youbing">
+      <view class="row" wx:for="{{dataList}}" wx:for-index="weibo" wx:key="index">
+        <navigator url='/pages/MyLike/MyLike?index={{weibo}}'>
+          <!-- <view>标记：{{index}}</view>
+      <view>标记2： {{weibo}}</view> -->
+
+          <!-- 界面 -->
+
+          <view class="user-group">
+            <image class="avatar" src="{{item.avatarUrl}}"></image>
+            <view class="right-info">
+              <view class="name">发布者： {{item.nickName}}</view>
+              <view class="detail-info">
+                <view class="time">发布时间：{{item.zTime}} </view>
+              </view>
+              <text class="coursecode">#{{item.code}}</text>
+              <text class="coursecode">#{{item.typeValue}}</text>
+              <text class="coursecode">#{{item.yearValue}}</text>
+            </view>
+
+          </view>
+
+          <view class="publishInfo">
+            <!-- <text class="coursecode">#{{item.code}}</text> -->
+            <text>{{item.content}}</text>
+          </view>
+
+          <!-- <image class="avatar" src="{{item.avatarUrl}}"></image> -->
+          <!-- <view class="username">{{item.nickName}}</view> -->
+
+          <!-- <view class="name">发布者： {{item.nickName}}</view>
+          <view class="code">课程代码： {{item.code}}</view>
+          <view class="content">试卷描述： {{item.content}}</view>
+          <view class="time">发布时间：{{ppp.timeFormat(item.validTime)}} </view> -->
+
+          <!-- <view class="getblock" wx:for="{{item.image}}" wx:for-item="oneimage" id="test">
+            <image class="userpicture" bindtap="1" src="{{oneimage}}" mode="aspectFill" />
+          </view> -->
+
+          <view class="image_if" wx:if="{{item.image.length === 1}}">
+            <image src="{{item.image}}" style="width:100%;max-height:400rpx;" mode="aspectFill"></image>
+          </view>
+          <view class="2image" wx:if="{{item.image.length === 2 }}">
+            <view wx:for="{{[0,1,2]}}" wx:for-item="i" wx:key="index">
+
+              <view style="flex-direction:row;display:flex;">
+                <!-- 横排布局 -->
+                <view wx:for="{{item.image}}" wx:for-item="tempPath" wx:for-index="index" wx:key="index">
+                  <!-- 遍历数组 -->
+                  <view wx:if="{{index>=i*3 && index<3*(i+1)}}" class="flex-item">
+                    <!-- 分段显示 -->
+                    <image class="image" src="{{tempPath}}" style="width:{{two}}px;height:{{two}}px;"
+                      mode="aspectFill" />
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+
+          <view class="I_image" wx:if="{{item.image.length >= 3}}">
+            <view wx:for="{{[0,1,2]}}" wx:for-item="i" wx:key="index">
+              <view style="flex-direction:row;display:flex;">
+                <!-- 横排布局 -->
+                <view wx:for="{{item.image}}" wx:for-item="tempPath" wx:for-index="index" wx:key="index">
+                  <!-- 遍历数组 -->
+                  <view wx:if="{{index>=i*3 && index<3*(i+1)}}" class="flex-item">
+                    <!-- 分段显示 -->
+                    <image class="image" src="{{tempPath}}" style="width:{{TT}}px;height:{{TT}}px;" mode="aspectFill" />
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+
+        </navigator>
+
+      </view>
+
+    </block>
+  </van-tab>
+
+
+
+
+  <!-- 关注 -->
+  <van-tab title="关注">
+    <!-- 搜索 -->
+    <view>
+      <van-search value="{{ value }}" shape="round" background="#4fc08d" placeholder="请输入搜索关键词" />
+    </view>
+    <block class="youbing">
+      <view class="row" wx:for="{{dataList1}}" wx:for-index="weibo1" wx:key="index1">
+        <navigator url='/pages/MyLike/MyLike?index1={{weibo1}}'>
+          <!-- <view>标记：{{index}}</view>
+      <view>标记2： {{weibo}}</view> -->
+
+          <!-- 界面 -->
+
+          <view class="user-group">
+            <image class="avatar" src="{{item.avatarUrl}}"></image>
+            <view class="right-info">
+              <view class="name">发布者： {{item.nickName}}</view>
+              <view class="detail-info">
+                <view class="time">发布时间：{{item.zTime}} </view>
+              </view>
+              <text class="coursecode">#{{item.code}}</text>
+              <text class="coursecode">#{{item.typeValue}}</text>
+              <text class="coursecode">#{{item.yearValue}}</text>
+            </view>
+
+          </view>
+
+          <view class="publishInfo">
+            <!-- <text class="coursecode">#{{item.code}}</text> -->
+            <text>{{item.content}}</text>
+          </view>
+
+          <!-- <image class="avatar" src="{{item.avatarUrl}}"></image> -->
+          <!-- <view class="username">{{item.nickName}}</view> -->
+
+          <!-- <view class="name">发布者： {{item.nickName}}</view>
+          <view class="code">课程代码： {{item.code}}</view>
+          <view class="content">试卷描述： {{item.content}}</view>
+          <view class="time">发布时间：{{ppp.timeFormat(item.validTime)}} </view> -->
+
+          <!-- <view class="getblock" wx:for="{{item.image}}" wx:for-item="oneimage" id="test">
+            <image class="userpicture" bindtap="1" src="{{oneimage}}" mode="aspectFill" />
+          </view> -->
+
+          <view class="image_if" wx:if="{{item.image.length === 1}}">
+            <image src="{{item.image}}" style="width:100%;max-height:400rpx;" mode="aspectFill"></image>
+          </view>
+          <view class="2image" wx:if="{{item.image.length === 2 }}">
+            <view wx:for="{{[0,1,2]}}" wx:for-item="i" wx:key="index">
+
+              <view style="flex-direction:row;display:flex;">
+                <!-- 横排布局 -->
+                <view wx:for="{{item.image}}" wx:for-item="tempPath" wx:for-index="index" wx:key="index">
+                  <!-- 遍历数组 -->
+                  <view wx:if="{{index>=i*3 && index<3*(i+1)}}" class="flex-item">
+                    <!-- 分段显示 -->
+                    <image class="image" src="{{tempPath}}" style="width:{{two}}px;height:{{two}}px;"
+                      mode="aspectFill" />
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+
+          <view class="I_image" wx:if="{{item.image.length >= 3}}">
+            <view wx:for="{{[0,1,2]}}" wx:for-item="i" wx:key="index">
+              <view style="flex-direction:row;display:flex;">
+                <!-- 横排布局 -->
+                <view wx:for="{{item.image}}" wx:for-item="tempPath" wx:for-index="index" wx:key="index">
+                  <!-- 遍历数组 -->
+                  <view wx:if="{{index>=i*3 && index<3*(i+1)}}" class="flex-item">
+                    <!-- 分段显示 -->
+                    <image class="image" src="{{tempPath}}" style="width:{{TT}}px;height:{{TT}}px;" mode="aspectFill" />
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+
+        </navigator>
+
+      </view>
+
+    </block>
+
+    <!-- <view class="block" bindtap="block" wx:for="{{6}}" wx:key="index">
+      <block>
+        <view class="user-group">
+          <image class="avatar"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/homePage/image-1.jpg"></image>
+          <view class="right-info">
+            <view class="username">用户信息</view>
+            <view class="detail-info">
+              <view class="time">发布时间</view>
+              <view class="from">来自iPhone XR</view>
+            </view>
+          </view>
+        </view>
+        <view class="getblock">
+          <image bindtap="1"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/050410502337_01.2017-2018_ACF102_F_S2_1.Jpeg"
+            mode="aspectFill" />
+          <image bindtap="2"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/050410502337_01.2017-2018_ACF102_F_S2_2.Jpeg"
+            mode="aspectFill" />
+          <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/050410502337_01.2017-2018_ACF102_F_S2_3.Jpeg"
+            mode="aspectFill" />
+        </view>
+
+      </block>
+    </view> -->
+
+  </van-tab>
+
+
+
+
+
+  <!-- 分区 -->
+  <van-tab title="分区">
+
+    <van-grid square column-num="2">
+      <van-grid-item wx:for="{{ 1 }}" use-slot wx:for-item="index" wx:key="index" link-type="navigateTo"
+        url="/pages/FinalExam/FinalExam">
+        <image style="width: 100%; height: 100%;" src="/image/期末.png" />
+      </van-grid-item>
+
+
+      <van-grid-item wx:for="{{ 1 }}" use-slot wx:for-item="index" wx:key="index" link-type="navigateTo"
+        url="/pages/lesson/lesson">
+        <image style="width: 100%; height: 100%;" src="/image/课程 (1).png" />
+      </van-grid-item>
+
+
+
+
+    </van-grid>
+
+  </van-tab>
+</van-tabs>

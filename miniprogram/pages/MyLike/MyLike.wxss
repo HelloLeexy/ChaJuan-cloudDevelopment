@@ -1,0 +1,259 @@
+/* pages/ding-test/ding-test.wxss *//* miniprogram/pages/MyLike/MyLike.wxss */
+.container{
+  padding: 40rpx;
+}
+.weibo{
+  width: 100%;
+  /* margin-bottom: 30rpx;
+  padding: 40rpx;
+  box-sizing: border-box; */
+  
+}
+
+.detail{
+  margin-left:30rpx;
+  border: 10rpx
+}
+
+.user-group{
+  display: flex;
+  margin-top: 10rpx;
+}
+
+
+.image-list{
+  padding-top: 20rpx;
+  height: 40rpx;
+  width: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  overflow: hidden;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+
+.right-info{
+  flex: 1;
+  margin-left: 20rpx;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.username{
+  font-size: 28rpx;
+}
+
+.detail-info {
+  font-size: 24rpx;
+  color: #665566;
+  display: flex;
+}
+
+
+.time{
+  margin-right: 20rpx;
+}
+
+.weibo-handle{
+  display: flex;
+  padding-top: 30rpx;
+  font-size: 24rpx;
+}
+.weibo-handle image{
+  width: 70rpx;
+  height: 60rpx;
+  /* margin-right: 20rpx; */
+}
+.collection_share_container{
+  margin-left: 55rpx
+}
+.weibo-handle view{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commet-group {
+  margin-right: 10rpx;
+}
+.praise-group {
+  margin-left: 10rpx;
+}
+.content-group{
+  padding-top: 30rpx;
+}
+.image-list{
+  padding-top: 20rpx;
+}
+
+
+
+
+.picture{
+  background: rgb(240, 240, 240);
+}
+.picture image{
+  width: 25%;
+  height: 80px;
+}
+.User image{
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.block image {
+  width: 92%;
+  height: 150px;
+  
+  background-color: rgb(225, 228, 225);
+}
+.getblock{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(245, 247, 245);
+  
+
+}
+.searview {  
+  position: relative;  
+  padding-right: 130rpx;  
+  border: 1px solid #e0e0e0;  
+  border-right: 0;  
+  border-radius: 10rpx;  
+  box-sizing: border-box;  
+  padding-left: 70rpx;  
+  height: 85rpx;
+} 
+.block{
+ height: 5%;
+}
+.shasbg {  
+  padding: 0 40rpx;
+} 
+.row{padding: 10rpx 50rpx;border-bottom: 1px solid #ccc;  flex: auto;
+  border-radius: 10rpx;
+  width: 550rpx;
+  height: 100%rpx;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 6%;
+  background-color:rgb(238, 238, 238);
+}
+.row .code{
+  font-size: 30rpx;  
+}
+.row .content{
+  font-size: 40rpx;  
+}
+.searview button {  
+  width: 130rpx;  
+  height: 85rpx;  
+  position: absolute;  
+  right: 0;  
+  top: -2rpx;  
+  background:gray;  
+  color: #fff;  
+  font-size: 30rpx;  
+  line-height: 85rpx;  
+  border-radius: 0 10rpx 10rpx 0;
+
+} 
+
+.searview input {  
+  font-size: 28rpx;  
+  color: #555;  
+  height: 83rpx;
+} 
+
+.icon-search {  
+  position: absolute;  
+  width: 31rpx;  
+  height: 31rpx;  
+  background-size: 31rpx auto;  
+  left: 25rpx;  
+  top: 27rpx;  
+
+}
+.time{
+  margin-right: 20rpx;
+}
+.a{
+  width: 64rpx;  
+  height: 64rpx;
+}
+
+.b{
+  width: 64rpx;  
+  height: 64rpx;
+}
+.image{
+  padding-top: 20rpx;
+  display: flex;
+
+}
+.notknow{
+  padding: 20rpx;
+}
+.group{
+  display: flex;
+}
+
+
+.avatar .icon {
+
+  position: absolute;
+
+  height: 74rpx;
+
+  width: 74rpx;
+
+  border-radius: 50%;
+
+  border: 50rpx solid #f1f1f1;
+
+}
+
+.content{
+  font-size: 20rpx;
+}
+.code{
+  font-size: 20rpx;
+}
+.weui-input{
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  left: 74rpx;
+  margin-top: 3%;
+}
+
+.name {
+  color: rgb(223, 126, 82);
+  font-size: medium;
+}
+
+.coursecode {
+  font-size: 12px;
+  color: #A9A9A9;
+  border: 1px solid #A9A9A9;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.publishInfo {
+  margin-top: 10px;
+  padding: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+

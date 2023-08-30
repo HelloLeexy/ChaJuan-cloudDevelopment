@@ -1,0 +1,51 @@
+<!--pages/center/center.wxml-->
+<view class="wholepage">
+  <navigator class="block" id="page" bindtap="block" wx:for="{{dataList}}" wx:key="index"
+    url='/pages/MyLike/MyLike?index={{weibo}}' wx:for-index="weibo">
+
+    <block>
+      <!-- <view class="user-group">
+        <image class="avatar" src="{{avatarurl}}"></image>
+        <view class="right-info">
+          <view class="username">{{item.nickName}}</view>
+          <view class="detail-info">
+            <view class="time">发布时间</view>
+            <view class="from">来自iPhone 12pro MAX 人上人特供版</view>
+          </view>
+        </view>
+      </view>
+      <view class="publishInfo">
+        <text class="coursecode">#{{item.code}}</text>
+        <text>
+          {{item.content}}</text>
+      </view> -->
+
+      <view class="user-group">
+        <image class="avatar" src="{{item.avatarUrl}}"></image>
+        <view class="right-info">
+          <view class="name">发布者： {{item.nickName}}</view>
+          <view class="detail-info">
+            <view class="time">发布时间：{{item.zTime}} </view>
+          </view>
+          <text class="coursecode">#{{item.code}}</text>
+          <text class="coursecode">#{{item.typeValue}}</text>
+          <text class="coursecode">#{{item.yearValue}}</text>
+        </view>
+      </view>
+
+      <view class="publishInfo">
+        <!-- <text class="coursecode">#{{item.code}}</text> -->
+        <text>{{item.content}}</text>
+      </view>
+
+      <view id="picblock">
+        <view class="getblock" wx:for="{{item.image}}" wx:for-item="oneimage" id="test">
+          <image class="userpicture" bindtap="1" src="{{oneimage}}" mode="aspectFill" />
+        </view>
+      </view>
+
+
+    </block>
+  </navigator>
+
+</view>

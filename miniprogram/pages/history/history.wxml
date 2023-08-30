@@ -1,0 +1,20 @@
+<text class="day"></text>
+<view class="out">
+  <navigator class="row" wx:for="{{dataList}}" wx:key="index" wx:for-index="weibo"
+    url='/pages/MyLike/MyLike?index={{weibo}}'>
+    <view class="Pic">
+      <image
+        src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/050410502337_01.2017-2018_ACF102_F_S2_1.Jpeg">
+      </image>
+    </view>
+    <view class="Data">
+
+      <view class="Moudle">课程代码: {{item.code}}</view>
+      <View class="Moudle-when">
+        <view class="test">{{item.typeValue}}</view>
+        <view class="Moudle-time">{{item.yearValue}}</view>
+      </View>
+      <view class="viewTime">上次观看: {{item.viewTime}}</view>
+    </view>
+  </navigator>
+</view>

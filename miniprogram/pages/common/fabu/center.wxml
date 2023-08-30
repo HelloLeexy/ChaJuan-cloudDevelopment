@@ -1,0 +1,23 @@
+<!--pages/center/center.wxml-->
+
+<view class="block" bindtap="block" wx:for="{{publish}}" wx:key = "index" >
+  <block>
+    <view class="user-group">
+      <image class="avatar" 
+      src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/homePage/image-1.jpg"></image>
+      <view class="right-info">
+        <view class="username">用户信息</view>
+        <view class="detail-info">
+          <view class="time">发布时间</view>
+          <view class="from">来自iPhone XR</view>
+        </view>
+      </view>
+    </view>
+    <view class="getblock" wx:for="{{item.image}}" wx:for-item="oneimage" id="test">
+    <image bindtap="1"
+      src="{{oneimage}}"
+      mode="aspectFill" />
+    </view>
+
+  </block>
+</view>

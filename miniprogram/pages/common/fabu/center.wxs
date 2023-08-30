@@ -1,0 +1,11 @@
+
+page({
+  data: {
+
+    user_publish: function(){//这里写一个方法 输出为用户发布帖子的各种信息所组成的多维数组
+      // return wx.getUserProfile;
+      return 8;
+    }
+  }
+
+}) 

@@ -1,0 +1,65 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/person/person",
+          "pathName": "pages/person/person",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/MyLike/MyLike",
+          "pathName": "pages/MyLike/MyLike",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tuijian/tuijian",
+          "pathName": "pages/tuijian/tuijian",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Mid17/Mid17",
+          "pathName": "pages/Mid17/Mid17",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/load/load",
+          "pathName": "pages/load/load",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

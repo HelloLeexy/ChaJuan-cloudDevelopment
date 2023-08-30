@@ -1,0 +1,58 @@
+<view class="User">
+  <block>
+    <image src=""></image>
+  </block>
+  <text>
+    User Name
+  </text>
+</view>
+<view>\n</view>
+<van-divider dashed />
+
+<view class="picture">
+
+  <block class="d">
+    <image bindtap="1"
+      src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/042417280411_01.2017-2018_ACF102_F_S2_1.Png" />
+    <image bindtap="2"
+      src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/042417280411_01.2017-2018_ACF102_F_S2_2.Png" />
+    <image bindtap="3"
+      src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/042417280411_01.2017-2018_ACF102_F_S2_3.Png" />
+    <image bindtap="4"
+      src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/042417280411_01.2017-2018_ACF102_F_S2_4.Png" />
+    <image bindtap="5"
+      src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/042417280411_01.2017-2018_ACF102_F_S2_5.Png" />
+    <image bindtap="6"
+      src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/042417280411_01.2017-2018_ACF102_F_S2_6.Png" />
+  </block>
+
+</view>
+<van-divider dashed />
+
+
+
+
+
+<view class="getblock" bindtap="block" wx:for="{{1}}">
+  <block>
+    <view class='shasbg'>
+      <view class='searview'>
+        <icon class='icon-search'></icon>
+        <view class='searall'>
+          <input type='text' placeholder="在这里写评论..." value='{{keyWord}}' confirm-type='search' focus="{{autoFocus}}">
+          </input>
+          <icon class='icon-cancel' bindtap='cancelword' wx:if='{{keyWord}}'></icon>
+        </view>
+        <button bindtap='searchBtn'>发布</button>
+      </view>
+    </view>
+
+
+    <view class="User">
+
+    </view>
+    <text class="anser">
+
+    </text>
+  </block>
+</view>

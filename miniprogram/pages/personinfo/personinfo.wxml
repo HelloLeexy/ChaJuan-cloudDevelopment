@@ -1,0 +1,81 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+<view class="container">
+  <view class="avatar">
+      <open-data class="avatar-img" type="userAvatarUrl" lang="zh_CN"></open-data>
+    </view>
+    <form>
+      <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">昵称</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input">
+                <open-data type="userNickName" lang="zh_CN"></open-data>
+              </view>
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">性别</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input">
+                <open-data type="userGender" lang="zh_CN"></open-data>
+              </view>
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">地区</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input">
+                <open-data class="country" type="userCountry" lang="zh_CN"></open-data>
+                <open-data class="province" type="userProvince" lang="zh_CN"></open-data>
+                <open-data class="city" type="userCity" lang="zh_CN"></open-data>
+              </view>
+            </view>
+          </view>
+
+
+          
+        </view>
+      </view>
+    </form>
+  <view class="page-body">
+  
+    <view class="page-section">
+      <view class="weui-cells__title">年级：{{inputValue}}</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          
+      <picker bindchange="bindPickerChange" value="{{grade}}" range="{{array}}">
+        <view class="picker">
+          {{array[grade]}}
+        </view>
+      </picker>
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">专业：{{inputValue1}}</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <picker bindchange="bindPickerChange1" value="{{major}}" range="{{array1}}">
+        <view class="picker">
+          {{array1[major]}}
+        </view>
+      </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="pulishBtn" bindgetuserinfo="getUserInfo" type="primary" size="{{primarySize}}" loading="{{loading}}"
+  plain="{{plain}}" disabled="{{disabled}}" bindtap="pulish">确认</button>
+</view>

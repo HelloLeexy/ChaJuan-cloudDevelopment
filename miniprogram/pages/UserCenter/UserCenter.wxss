@@ -1,0 +1,11 @@
+/* pages/UserCenter/UserCenter.wxss */
+.person{
+  width: 70%;
+  margin-top: 160px;
+  margin-left: 15%;
+}
+.changeName{
+  margin-top: 10%;
+  width: 50%;
+  margin-left: 25%;
+}

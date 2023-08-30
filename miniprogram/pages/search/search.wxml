@@ -1,0 +1,36 @@
+<view class="nav_search">
+  <view class="input_panel">
+    <icon class="icon-search"></icon>
+    <input type="text" focus="true" bindfocus="hanleFocus" bindconfirm="handleConfirm" placeholder="请输入想要查找的关键词"
+      confirm-type="search" value="{{inputValue}}"></input>
+  </view>
+  <view class="cancle" bindtap="resetSearch">取消</view>
+</view>
+
+<view class="search_history_lists">
+  <view class='title'>
+    历史搜索
+  </view>
+  <view class="search-history">
+    <view wx:for="{{historyList}}" wx:key="index">
+      <text bindtap="hanleHistoryItem" data-text="{{item}}" wx:if="{{item.length!==0}}"
+        class="searchRecord">{{item}}</text>
+    </view>
+  </view>
+  <view wx:if="{{historyList.length!==0}}" class="clearHistory" bindtap="clearHistory">清除搜索历史</view>
+
+  <view class="naviga">
+    <view wx:for="{{dataList}}" wx:key="index" open-type="navigate" wx:for-index="weibo">
+      <navigator class="searchList-item" url='/pages/MyLike/MyLike?index={{weibo}}'>
+        <view>
+          <test>{{"课程代码："+item.code}}</test>
+
+          <test>{{" 时间："+item.yearValue}}</test>
+          <!-- <image src="{{item.image}}"/> -->
+          <!-- <text>{{"time: "+item._openid}}</text> -->
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+</view>

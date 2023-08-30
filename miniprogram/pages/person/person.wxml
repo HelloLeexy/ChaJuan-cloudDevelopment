@@ -1,0 +1,53 @@
+<view class="user">
+
+  <button class="user-info">
+    <!-- <block wx:if="{{!hasUserInfo}}">
+        <image src="{{ userPhoto }}" ></image>      
+        <button wx:if="{{logged}}" type="primary" size="mini" bindtap="getUserProfile" >点击登录</button>    
+      
+      </block>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" mode="cover"></image>
+        <text class="userinfo-nickname" style="color:{{numTextColor}}">{{userInfo.nickName}}</text>
+      </block> -->
+
+    <open-data class="avs" type="userAvatarUrl" mode="cover"></open-data>
+    <open-data class="username" style="color:{{numTextColor}}" type="userNickName"></open-data>
+
+  </button>
+
+</view>
+
+
+
+<van-grid clickable column-num="3" border="{{ false }}" size="mini">
+  <van-grid-item size="mini" icon="manager-o" link-type="navigateTo" url="/pages/fabu/center" text="我的发布"
+    clickable="true" />
+  <van-grid-item icon="underway-o" link-type="navigateTo" url="/pages/history/history" text="历史纪录" clickable="true" />
+  <van-grid-item icon="like-o" link-type="navigateTo" url="/pages/collect/collect" text="个人收藏" clickable="true" />
+</van-grid>
+
+<!-- 并排按钮 -->
+<view>
+  <navigator url="/pages/room/room">
+    <button type="primary" size="default">
+      <van-icon name="bell" />公共聊天室
+    </button>
+  </navigator>
+</view>
+<!-- <view class="button2">
+  <navigator url="/pages/inform/inform">
+    <button type="primary" size="default">
+      <van-icon name="comment" />通知
+    </button>
+  </navigator>
+</view> -->
+
+<text>\n</text>
+
+
+
+<van-cell size="large" is-link title="设置" icon="setting-o" link-type="navigateTo" url="/pages/setting/setting" />
+<van-cell size="large" is-link title="赞助我们" icon="setting-o" link-type="navigateTo" url="/pages/daqian/daqian" />
+<van-cell size="large" is-link title="管理员入口" icon="setting-o" link-type="navigateTo"
+  url="/pages/adminPassword/adminPassword" />

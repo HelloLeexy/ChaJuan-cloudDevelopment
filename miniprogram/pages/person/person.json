@@ -1,0 +1,19 @@
+{
+  "usingComponents": {
+    "van-grid": "/dist/grid/index",
+    "van-grid-item": "/dist/grid-item/index",
+    "van-calendar": "/dist/calendar/index",
+    "van-cell": "/dist/cell/index",
+    "van-cell-group": "/dist/cell-group/index",  
+    "van-image": "/dist/image/index",
+    "van-divider": "/dist/divider/index",
+    "van-button": "/dist/button/index",
+    "van-icon": "/dist/icon/index"
+  },
+  "navigationBarTitleText": "个人",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#eeeeee",
+  "enablePullDownRefresh": false
+
+}

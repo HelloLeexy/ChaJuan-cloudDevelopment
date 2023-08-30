@@ -1,0 +1,167 @@
+/* pages/ding-test/ding-test.wxss *//* miniprogram/pages/MyLike/MyLike.wxss */
+.container{
+  padding: 40rpx;
+}
+.container .weibo-group{
+  width: 100%;
+  /* margin-bottom: 30rpx;
+  padding: 40rpx;
+  box-sizing: border-box; */
+  
+}
+.container .weibo .user-group{
+  display: flex;
+
+
+}
+.image-list{
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.user-group .avatar{
+  width: 74rpx;
+  height: 74rpx;
+  border-radius: 50%;
+  justify-self: start;
+}
+.user-group .right-info{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-info .username{
+  font-size: 28rpx;
+  color: #323232;
+}
+
+.detail-info{
+  font-size: 24rpx;
+  color: #665566;
+  display: flex;
+}
+
+.time{
+  margin-right: 20rpx;
+}
+
+.weibo-content-group{
+  padding-top: 30rpx;
+}
+
+.weibo-content-group .content{
+  font-size: 30rpx;
+}
+
+
+.weibo-handle{
+  display: flex;
+  padding-top: 30rpx;
+  font-size: 24rpx;
+}
+.weibo-handle image{
+  width: 60rpx;
+  height: 50rpx;
+  /* margin-right: 20rpx; */
+}
+.weibo-handle view{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commet-group {
+  margin-right: 10rpx;
+}
+.praise-group {
+  margin-left: 10rpx;
+}
+.content-group{
+  padding-top: 30rpx;
+}
+.image-list{
+  padding-top: 20rpx;
+}
+
+
+
+
+.picture{
+  background: rgb(240, 240, 240);
+}
+.picture image{
+  width: 25%;
+  height: 80px;
+}
+.User image{
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.block image {
+  width: 92%;
+  height: 150px;
+  
+  background-color: rgb(225, 228, 225);
+}
+.getblock{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(245, 247, 245);
+  
+
+}
+.searview {  
+  position: relative;  
+  padding-right: 130rpx;  
+  border: 1px solid #e0e0e0;  
+  border-right: 0;  
+  border-radius: 10rpx;  
+  box-sizing: border-box;  
+  padding-left: 70rpx;  
+  height: 85rpx;
+} 
+
+.shasbg {  
+  padding: 0 40rpx;
+} 
+
+.searview button {  
+  width: 130rpx;  
+  height: 85rpx;  
+  position: absolute;  
+  right: 0;  
+  top: -2rpx;  
+  background:gray;  
+  color: #fff;  
+  font-size: 30rpx;  
+  line-height: 85rpx;  
+  border-radius: 0 10rpx 10rpx 0;
+
+} 
+
+.searview input {  
+  font-size: 28rpx;  
+  color: #555;  
+  height: 83rpx;
+} 
+
+.icon-search {  
+  position: absolute;  
+  width: 31rpx;  
+  height: 31rpx;  
+  background-size: 31rpx auto;  
+  left: 25rpx;  
+  top: 27rpx;  
+
+}
+.getblock image{
+  margin-left: 20px;
+  width: 30%;
+  height: 100px;
+  }

@@ -1,0 +1,25 @@
+<!--pages/UserCenter/UserCenter.wxml-->
+<view class="person">
+  <button>
+    <button class="thisbutton" type="default"  disabled="true" plain="true">
+      <view class="pername">
+        用户名字
+      </view>
+      <view class="message" >
+        用户信息
+      </view>
+      <image>
+        
+      </image>
+    </button>
+  </button>
+</view>
+<view class="changeName">
+  <navigator url="/pages/messageChange/messageChange">
+    <button type="primary">
+      编辑个人信息
+    </button>
+  </navigator>
+</view>
+
+<van-toast id="van-toast" />

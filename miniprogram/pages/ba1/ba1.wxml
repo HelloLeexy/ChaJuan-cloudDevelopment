@@ -1,0 +1,216 @@
+
+
+<view class="container">
+  <view class="block" bindtap="block" wx:for="{{1}}" wx:key = "ics1" >
+    <view>
+      <view class="weibo-group">
+        <view class="user-group">
+        
+          <image class="avatar" 
+          src="https://636c-cloud1-6g47vna66fd678fb-1305250544.tcb.qcloud.la/oeTHr5bsvwuvXiLRjg_gS4LNSm40/0.7237049703521286_1619990610033.bmp?sign=af62764af8e33687043f0931148a7c45&t=1620451781"></image>
+        
+        
+          <view class="right-info">
+            <view class="username">管理员</view>
+            <view class="detail-info">
+              <view class="time">2021/5/7</view>
+              <view class="from">来自iPhone</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+        <view class="weibo-content-group">
+          <view class="content">CCSE001</view>
+          <view class="image-list-group">
+            <image bindtap="1"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/1.2017-2018_CCS001_F_S2_00.png"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="2"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/1.2017-2018_CCS001_F_S2_01.png"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3" 
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+          
+        </view>
+      </view>
+    </view>
+</view>
+
+
+
+<view class="container">
+  <view class="block" bindtap="block" wx:for="{{1}}" wx:key = "ics1" >
+    <view>
+      <view class="weibo-group">
+        <view class="user-group">
+        
+          <image class="avatar" 
+          src="https://636c-cloud1-6g47vna66fd678fb-1305250544.tcb.qcloud.la/oeTHr5bsvwuvXiLRjg_gS4LNSm40/0.7237049703521286_1619990610033.bmp?sign=af62764af8e33687043f0931148a7c45&t=1620451781"></image>
+        
+        
+          <view class="right-info">
+            <view class="username">管理员</view>
+            <view class="detail-info">
+              <view class="time">2021/5/7</view>
+              <view class="from">来自iPhone</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+        <view class="weibo-content-group">
+          <view class="content">CCSE104</view>
+          <view class="image-list-group">
+            <image bindtap="10"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/9.2017-2018_CCS104_R_SH_00.png"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="11"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/9.2017-2018_CCS104_R_SH_01.png"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/2.2017-2018_CSE101_R_SH(1)_02.png"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3" 
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+          
+        </view>
+      </view>
+    </view>
+</view>
+
+<view class="container">
+  <view class="block" bindtap="block" wx:for="{{1}}" wx:key = "ics1" >
+    <view>
+      <view class="weibo-group">
+        <view class="user-group">
+          <image class="avatar" 
+          src="https://636c-cloud1-6g47vna66fd678fb-1305250544.tcb.qcloud.la/oeTHr5bsvwuvXiLRjg_gS4LNSm40/0.7237049703521286_1619990610033.bmp?sign=af62764af8e33687043f0931148a7c45&t=1620451781"></image>
+        
+        
+          <view class="right-info">
+            <view class="username">管理员</view>
+            <view class="detail-info">
+              <view class="time">2021/5/7</view>
+              <view class="from">来自iPhone</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+        <view class="weibo-content-group">
+          <view class="content">CCSE105</view>
+          <view class="image-list-group">
+            <image bindtap="19"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/10.2017-2018_CCS105_F_S1_00.png"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="20"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/10.2017-2018_CCS105_F_S1_01.png"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3" 
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+            <image  bindtap="3"
+            src="cloud://cloud1-6g47vna66fd678fb.636c-cloud1-6g47vna66fd678fb-1305250544/Paper/Snipaste_2021-05-09_01-56-31.bmp"
+            mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px;"></image>
+          
+        </view>
+      </view>
+    </view>
+</view>
+
+
+    
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

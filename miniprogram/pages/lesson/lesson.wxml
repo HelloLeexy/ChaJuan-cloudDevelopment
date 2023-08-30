@@ -1,0 +1,10 @@
+<view class="color">
+  <van-tree-select
+  items="{{ items }}"
+  height="180vw"
+  main-active-index="{{ mainActiveIndex }}"
+  active-id="{{ activeId }}"
+  bind:click-nav="onClickNav"
+  bind:click-item="onClickItem"
+/>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/setting/setting.wxml-->
+<!-- <text>pages/setting/setting.wxml</text> -->
+
+
+<!-- <van-grid square>
+  <van-grid-item icon="photo-o" text="文字" wx:for="{{ 8 }}" wx:key = "index" />
+</van-grid> -->
+
+<van-cell
+  is-link
+  title="个人信息编辑"
+  link-type="navigateTo"
+  url="/pages/personinfo/personinfo"
+/>
+<!-- <van-cell
+  is-link
+  title="我的认证"
+  link-type="navigateTo"
+  url="/pages/dashboard/index"
+/> -->
+<!-- <van-cell
+  is-link
+  title="单元格"
+  link-type="navigateTo"
+  url="/pages/dashboard/index"
+/> -->
